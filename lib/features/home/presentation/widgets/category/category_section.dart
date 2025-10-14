@@ -21,7 +21,7 @@ class CategorySection extends StatelessWidget {
             crossAxisCount: 4,
             mainAxisSpacing: 10,
             crossAxisSpacing: 10,
-            childAspectRatio: 0.6,
+            childAspectRatio: 0.7,
             shrinkWrap: true,
             physics: NeverScrollableScrollPhysics(),
             padding: EdgeInsets.zero,
@@ -34,7 +34,6 @@ class CategorySection extends StatelessWidget {
               ),
             ),
           ),
-          
           Row(
             mainAxisAlignment: MainAxisAlignment.center ,
             children: [

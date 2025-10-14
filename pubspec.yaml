@@ -71,6 +71,7 @@ flutter:
      - assets/images/notification_icons/
      - assets/images/bottom_nav/
      - assets/images/category/
+     - assets/images/nearby_stores/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

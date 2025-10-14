@@ -19,7 +19,7 @@ class TitleTextWidget extends StatelessWidget {
             children: [
               Text(
                 title,
-                style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 21, fontWeight: FontWeight.bold),
               ),
               Spacer(),
               seeAll

@@ -46,7 +46,7 @@ class BottomNavScreen extends StatelessWidget {
                 items: [
                   BottomNavigationBarItem(
                     icon: Image.asset(
-                      'assets/images/home_icon.png',
+                      'assets/images/bottom_nav/home_icon.png',
                       height: 25,
                       color: currentIndex == 0 ? green: Colors.grey,
                     ),
@@ -54,7 +54,7 @@ class BottomNavScreen extends StatelessWidget {
                   ),
                    BottomNavigationBarItem(
                     icon: Image.asset(
-                      'assets/images/cart_icon.png',
+                      'assets/images/bottom_nav/cart_icon.png',
                       height: 25,
                       color: currentIndex == 1 ? green: Colors.grey,
                     ),
@@ -62,7 +62,7 @@ class BottomNavScreen extends StatelessWidget {
                   ),
                    BottomNavigationBarItem(
                      icon: Image.asset(
-                       'assets/images/my_order_icon.png',
+                       'assets/images/bottom_nav/my_order_icon.png',
                        height: 25,
                        color: currentIndex == 2 ? green: Colors.grey,
                      ),
@@ -70,7 +70,7 @@ class BottomNavScreen extends StatelessWidget {
                   ),
                    BottomNavigationBarItem(
                      icon: Image.asset(
-                       'assets/images/accounts_icon.png',
+                       'assets/images/bottom_nav/accounts_icon.png',
                        height: 25,
                        color: currentIndex == 3 ? green: Colors.grey,
                      ),

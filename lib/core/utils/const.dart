@@ -14,6 +14,7 @@ const width20 = SizedBox(width: 20,);
 const width10 = SizedBox(width: 10,);
 const width5 = SizedBox(width: 5,);
 const height5 = SizedBox(height: 5,);
+final ContentGap = SizedBox(height: height * 0.008);
 
 final padding = width * 0.04;
 

@@ -4,7 +4,7 @@ import '../../../../core/error/failure.dart';
 import '../../../../core/network/network_info.dart';
 import '../../domain/entity/Notification.dart';
 import '../../domain/repository/notification_repository.dart';
-import '../datasourse/notification_remote_data_source.dart';
+import '../datasource/notification_remote_data_source.dart';
 
 class NotificationRepositoryImpl implements NotificationRepository {
   final NotificationRemoteDataSource remoteDataSource;
@@ -16,7 +16,7 @@ class NotificationRepositoryImpl implements NotificationRepository {
   });
 
   @override
-  Future<Either<Failure, List<Notification>>> getNotifications() async {
+  Future<Either<Failure, List<NotificationEntity>>> getNotifications() async {
     if (await networkInfo.isConnected) {
       try {
         final remoteNotifications = await remoteDataSource.getNotifications();

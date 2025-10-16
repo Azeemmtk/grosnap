@@ -1,6 +1,6 @@
 import '../../domain/entity/Notification.dart';
 
-class NotificationModel extends Notification {
+class NotificationModel extends NotificationEntity {
   const NotificationModel({
     required super.image,
     required super.title,

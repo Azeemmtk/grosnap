@@ -4,14 +4,14 @@ import 'package:grosnap/features/notification/domain/repository/notification_rep
 import '../../../../core/error/failure.dart';
 import '../entity/Notification.dart';
 
-class GetNotifications implements UseCase<List<Notification>, NoParams>{
+class GetNotifications implements UseCase<List<NotificationEntity>, NoParams>{
 
   final NotificationRepository repository;
 
   GetNotifications({required this.repository});
 
   @override
-  Future<Either<Failure, List<Notification>>> call( NoParams params) async{
+  Future<Either<Failure, List<NotificationEntity>>> call( NoParams params) async{
     return await repository.getNotifications();
   }
 

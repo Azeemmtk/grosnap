@@ -18,6 +18,7 @@ class NotificationScreen extends StatelessWidget {
         create: (context) => getIt<NotificationBloc>()..add(GetNotificationEvent()),
         child: BlocBuilder<NotificationBloc, NotificationState>(
           builder: (context, state) {
+            print('BlocBuilder state: $state'); // Add this debug print
             if(state is NotificationLoading){
               return Center(
                 child: CircularProgressIndicator(

@@ -3,5 +3,5 @@ import '../../../../core/error/failure.dart';
 import '../entity/Notification.dart';
 
 abstract class NotificationRepository {
-  Future<Either<Failure, List<Notification>>> getNotifications();
+  Future<Either<Failure, List<NotificationEntity>>> getNotifications();
 }

@@ -2,7 +2,8 @@ import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:dio/dio.dart';
 import 'package:get_it/get_it.dart';
 import '../../features/bottom_nav/presentation/provider/cubit/bottom_nav_cubit.dart';
-import '../../features/notification/data/datasourse/notification_remote_data_source.dart';
+import '../../features/notification/data/datasource/notification_api_services.dart';
+import '../../features/notification/data/datasource/notification_remote_data_source.dart';
 import '../../features/notification/data/repository/notification_repository_impl.dart';
 import '../../features/notification/domain/repository/notification_repository.dart';
 import '../../features/notification/domain/usecases/get_notifications.dart';
@@ -15,13 +16,14 @@ Future<void> initializeDependencies() async {
   // External Dependencies
   getIt.registerLazySingleton<Dio>(() => Dio());
   getIt.registerLazySingleton<Connectivity>(() => Connectivity());
+  getIt.registerLazySingleton<NotificationApiService>(() => NotificationApiService(dio: getIt<Dio>()));
 
   // Core
   getIt.registerLazySingleton<NetworkInfo>(() => NetworkInfoImpl(getIt<Connectivity>()));
 
   // Data Sources
   getIt.registerLazySingleton<NotificationRemoteDataSource>(
-        () => NotificationRemoteDataSourceImpl(dio: getIt<Dio>()),
+        () => NotificationRemoteDataSourceImpl(apiService: getIt<NotificationApiService>()),
   );
 
   // Repositories

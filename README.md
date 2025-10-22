@@ -62,5 +62,5 @@ A modern and intuitive **GroSnap App** built with **Flutter**, following **Clean
 
 1. **Clone the repository**
    ```bash
-   git clone <https://github.com/yourusername/grosnap.git>
+   git clone https://github.com/Azeemmtk/grosnap.git
    cd grosnap

@@ -23,7 +23,7 @@ class NotificationRemoteDataSourceImpl implements NotificationRemoteDataSource {
   Future<List<NotificationModel>> getNotifications() async {
     const String baseUrl = 'https://raw.githubusercontent.com/sayanp23/test-api/main/test-notifications.json';
     try {
-      // Offload the API call to an isolate
+      // isolate
       return await compute(_fetchNotifications, NotificationFetchParams(baseUrl, apiService));
     } catch (e) {
       throw ServerException('Server error: $e');
@@ -31,7 +31,7 @@ class NotificationRemoteDataSourceImpl implements NotificationRemoteDataSource {
   }
 }
 
-// Function to run in the isolate (now uses the service)
+// isolate function
 Future<List<NotificationModel>> _fetchNotifications(NotificationFetchParams params) async {
   return await params.apiService.fetchNotifications(params.url);
 }

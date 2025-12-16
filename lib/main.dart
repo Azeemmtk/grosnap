@@ -18,6 +18,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     
     getSize(context);
+
     return MaterialApp(
       title: 'Flutter Demo',
       theme: AppTheme.lightTheme,

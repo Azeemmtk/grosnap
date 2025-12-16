@@ -6,7 +6,7 @@ class MyOrderScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Text('My order screen'),
+      child: Text('My order'),
     );
   }
 }

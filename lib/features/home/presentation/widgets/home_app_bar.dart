@@ -10,7 +10,6 @@ class HomeAppBar extends StatelessWidget implements PreferredSizeWidget{
   });
 
   @override
-  // TODO: implement preferredSize
   Size get preferredSize => Size.fromHeight(height * 0.125);
 
   @override

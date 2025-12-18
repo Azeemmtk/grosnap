@@ -39,7 +39,7 @@ workflows:
     publishing:
       email:
         recipients:
-          - user_1@example.com
+          - aseemmtk@gmail.com
           - user_2@example.com
         notify:
           success: true

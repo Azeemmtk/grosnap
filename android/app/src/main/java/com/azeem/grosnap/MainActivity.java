@@ -1,4 +1,4 @@
-package com.example.grosnap;
+package com.azeem.grosnap;
 
 import io.flutter.embedding.android.FlutterActivity;
 
